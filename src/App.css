@@ -1,7 +1,7 @@
 .header {background:url('./assets/images/bg-img.jpg') top left no-repeat #666;;background-size: cover; position: fixed; width: 100%;height:100%; z-index:999;}
 
 .header.expanded {
-  width: 400px; 
+  width:500px; 
   transition:0.8s;
   border-radius:0 8px 8px 0;
   overflow:hidden;
@@ -75,5 +75,6 @@ li{list-style-type:none;}
   }
 }
 
-.aboutSection{background:rgba(68, 68, 68, 0.6);height:100vh;background-image:linear-gradient(140deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));}
+/*----- about section css started here -----*/
+.aboutSection{margin-left:500px;padding:30px;height:100vh;}
 .aboutSection .heading{color:#fff;font-size:20px;line-height:normal;text-align:center;font-weight:bold;}
