@@ -76,5 +76,48 @@ li{list-style-type:none;}
 }
 
 /*----- about section css started here -----*/
-.aboutSection{margin-left:500px;padding:30px;height:100vh;}
+.aboutSection{margin-left:500px;padding:30px;}
 .aboutSection .heading{color:#fff;font-size:20px;line-height:normal;text-align:center;font-weight:bold;}
+.aboutMy{margin-top:0px;color:#666;font-size:17px;line-height:26px;}
+.post-title{margin-bottom:10px;}
+#my-personal-interests{margin:30px 0px 10px 0;}
+#my-personal-interests strong{font-size:26px;color:#333;font-family: Arial, Helvetica, sans-serif;}
+.aboutSection ul{padding-left:0;}
+.aboutSection ul li {padding-left:20px; position:relative;color:#666;font-size:17px;line-height:26px;}
+.aboutSection ul li:after{position:absolute;content:'';left:0;top:12px; width:6px;height:6px;border-radius:20px;background:#333;}
+.post-meta__date {
+  margin-right: .5em;
+}
+.date, .time, .author, .tags {
+  font-size: .8em;
+  color: #c7c7c7;
+}
+.post-meta {
+  margin: 0 0 .4em 0;
+  color: #c7c7c7;
+}
+.post-meta__tags {
+  font-size: 12px;
+  padding: 0 5px;
+}
+.post-meta__tags {
+  margin-left: .4em;
+}
+.aboutSection h1 {
+  margin-top: 0;
+  font-size: 3.2em;
+  line-height: 1.2em;
+  letter-spacing: .05em;
+}
+h1, h2, h3, h4, h5, h5 {
+  margin-top: .8em;
+  margin-bottom: .4em;
+  font-family: "Roboto Slab", serif;
+  font-weight: lighter;
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+}
+.aboutSection a {
+  text-decoration: none;
+  color: #e25440;
+}

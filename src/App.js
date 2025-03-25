@@ -12,7 +12,6 @@ function App() {
   };
 
   const detail = {
-    
   }
   return (
     <div className="App">
@@ -34,25 +33,25 @@ function App() {
               </ul>
               <ul class="navigationList">
                 <li class="navigationBtn">
-                  <a href="http://twitter.com/anshulrohilla" title="@anshulrohilla on Twitter" target="_blank">
+                  <a href="http://twitter.com/" title="@tanuja on Twitter" target="_blank">
                     <FaTwitter size={22} color="#fff" />
                     {/* <span class="label">Twitter</span> */}
                   </a>
                 </li>
                 <li class="navigationBtn">
-                  <a href="www.linkedin.com/in/tanujatiwarii" title="anshulrohilla.ac on Facebook" target="_blank">
+                  <a href="www.linkedin.com/in/tanujatiwarii" title="tanuja.ac on Facebook" target="_blank">
                     <FaLinkedin size={22} color="#fff" />
                     {/* <span class="label">Facebook</span> */}
                   </a>
                 </li>
                 <li class="navigationBtn">
-                  <a href="https://www.linkedin.com/in/anshulrohilla" title="anshulrohilla on LinkedIn" target="_blank">
+                  <a href="https://www.linkedin.com/in/" title="tanuja on LinkedIn" target="_blank">
                     <FaFacebookF size={22} color="#fff" />
                     {/* <span class="label">LinkedIn</span> */}
                   </a>
                 </li>
                 <li class="navigationBtn">
-                  <a href="https://www.github.com/anshul-rohilla" title="anshul-rohilla on GitHub" target="_blank">
+                  <a href="https://www.github.com/Tanuja-mt" title="tanuja on GitHub" target="_blank">
                     <FaGithub size={22} color="#fff" />
                     {/* <span class="label">GitHub</span> */}
                   </a>
@@ -71,16 +70,17 @@ function App() {
             <article class="post-container post-container--single">
               <header class="post-header">
                 <div class="post-meta">
-                  <time datetime="2018-10-01 15:04" class="post-meta__date date">1 Oct 2018</time>
+                  <time datetime="2018-10-01 15:04" class="post-meta__date date">25 march 2025</time>
                   <span class="post-meta__tags">on <a href="/tags/#about">about</a> </span>
                 </div>
                 <h1 class="post-title">About Me</h1>
               </header>
               <section class="post">
-                <p></p>
-                <p>I graduated from BITS, Pilani with my master’s in Software Systems and holds a bachelor’s in Computer Science from Rajasthan University. From past 7 years of my professional career, I’ve been honing my skills in software development. I enjoy constantly learning and improving my skill with the latest technologies and keep evolving in this ever-changing field.</p>
+                <div className='aboutMy'>
+                  I hold a diploma in information techology from Govt. Polytechnic College Kashipur, Uttarakhand. With 3 years of professional experience in Frontend Development, I have been continuously honing my skills and staying up-to-date with the latest technologies. I am passionate about learning, problem-solving, and evolving in this ever-changing tech landscape
+                </div>
                 <h4 id="my-personal-interests"><strong>My Personal Interests</strong></h4>
-                <p>When I am not with technology, I enjoy my time doing any of the following:</p>
+                <div className='aboutMy'>When I am not with technology, I enjoy my time doing any of the following:</div>
                 <ul>
                   <li>Spending time with family</li>
                   <li>Travelling and Exploring new places and cultures</li>
@@ -89,23 +89,14 @@ function App() {
                   <li>Reading anything but not fiction</li>
                   <li>Brainstorming and Meeting new people</li>
                 </ul>
-
               </section>
-
             </article>
-
-
-
           </div>
-
           <footer class="footer">
-            <span class="footer__copyright">© 2021 Anshul Rohilla. All rights reserved.</span>
+            <span class="footer__copyright aboutMy">© 2025 Tanuja Tiwari. All rights reserved.</span>
           </footer>
-
           <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
           <script type="text/javascript" src="/js/main.js?1630478474814671744"></script>
-
-
         </div>
       </div>
     </div>
