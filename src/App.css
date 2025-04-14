@@ -21,6 +21,7 @@ li{list-style-type:none;}
 .navigationList li{transition:.5s; width:40px;height:40px;border:1px solid #fff;display:flex;align-items:center;justify-content:center;border-radius:100%;}
 .navigationList li a{width:39px;height:39px;}
 .profession .navigation__item{border-radius:100%;}
+.navigationList li a:hover{transform:0.5s;border: 1px solid #e25440;letter-spacing: 1px;text-shadow: none;color: #e25440;padding:0;border-radius:100px;}
 /* @keyframes run {
   0% {
     left: 0;

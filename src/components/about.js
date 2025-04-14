@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
 
 const About =()=>{
+
+  const [hobby , setHobby] = useState([
+    {id : 1 , hobbyType : "Spending quality time with family"},
+    {id : 2 , hobbyType : "Traveling and immersing myself in new places and cultures"},
+    {id : 3 , hobbyType : "Exploring photography as a creative outlet"},
+    {id : 4 , hobbyType : "Practicing meditation for clarity and mindfulness"},
+    {id : 5 , hobbyType : "Brainstorming ideas and connecting with new people"},
+    {id : 6 , hobbyType : "Reading a wide range of non-fiction"},
+
+
+  ])
+
+  
     return(
 
 
-<div className="aboutSection">
+      <div className="aboutSection">
         <div className="content-wrapper">
           <div className="content-wrapper-inner">
             <article className="post-container post-container--single">
@@ -18,17 +31,16 @@ const About =()=>{
               </header>
               <section className="post">
                 <div className='aboutMy'>
-                  I hold a diploma in information techology from Govt. Polytechnic College Kashipur, Uttarakhand. With 3 years of professional experience in Frontend Development, I have been continuously honing my skills and staying up-to-date with the latest technologies. I am passionate about learning, problem-solving, and evolving in this ever-changing tech landscape
+                  I hold a Diploma in Information Technology from Govt. Polytechnic College, Kashipur (Uttarakhand), and bring over 3 years of professional experience in Frontend Development. My journey in tech has been driven by a deep passion for building intuitive, responsive user interfaces and staying current with the latest tools and trends in web development.
+                  I thrive in fast-paced environments where continuous learning and problem-solving are part of the daily rhythm. Whether it’s refining UI/UX, diving into new frameworks, or optimizing performance, I’m always eager to grow and contribute meaningfully to impactful projects.
                 </div>
-                <h4 id="my-personal-interests"><strong>My Personal Interests</strong></h4>
-                <div className='aboutMy'>When I am not with technology, I enjoy my time doing any of the following:</div>
+                <h4 id="my-personal-interests"><strong>Personal Interests</strong></h4>
+                <div className='aboutMy'>When I'm away from technology, I find joy in:</div>
                 <ul className="mySkills">
-                  <li>Spending time with family</li>
-                  <li>Travelling and Exploring new places and cultures</li>
-                  <li>Photography</li>
-                  <li>Meditation</li>
-                  <li>Reading anything but not fiction</li>
-                  <li>Brainstorming and Meeting new people</li>
+                {hobby.map((hobby) => (
+                  <li key={hobby.id}>{hobby.hobbyType}</li>
+                ))}
+
                 </ul>
               </section>
             </article>
@@ -39,7 +51,7 @@ const About =()=>{
           <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
           <script type="text/javascript" src="/js/main.js?1630478474814671744"></script>
         </div>
-      </div>    
+      </div>
 
     )
 }

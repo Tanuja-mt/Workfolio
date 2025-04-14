@@ -61,7 +61,6 @@ function App() {
         </div>
         <div className="panel-cover--overlay"></div>
       </header>
-
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
