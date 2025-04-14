@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const About =()=>{
+
+  const API = "https://www.programiz.com/javascript/online-compiler/";
+  const getMoviData = async () => {
+    try{
+      const res = await axios.get(API);
+      console.log(res);
+    }
+    catch(error){
+      console.log(error)
+    }
+  };
+
+
+  useEffect (() =>{
+    getMoviData();
+  },[]);
+
     return(
      <div className="aboutSection">
         <div className="content-wrapper">
