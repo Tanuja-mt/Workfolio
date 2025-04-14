@@ -1,18 +1,18 @@
 import './App.css';
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import profileImg from './assets/images/profile-photo.jpg';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from 'react-router-dom';
 import { FaTwitter, FaLinkedin, FaFacebookF, FaGithub } from 'react-icons/fa';
-import { CgHello } from 'react-icons/cg';
-import Skills from './skills';
-import About from './about';
 
+// import Home from './components/Home';
+import Skills from './components/skills';
+import About from './components/about';
 
 function App() {
-  // const [count , setcount] = useState(0);
   const [isExpanded, setIsExpanded] = useState(false);
+
   const handleClick = () => {
-    setIsExpanded(!isExpanded);
+    setIsExpanded(true); // expand when navigating
   };
 
   return (
@@ -21,52 +21,50 @@ function App() {
         <div className="panel-main">
           <div className="panel">
             <div className="pannelContainer">
-              <a href="">
-                <img src={profileImg} />
+              <a href="#">
+                <img src={profileImg} alt="Profile" />
                 <span>Tanuja Tiwari</span>
               </a>
               <div className="profession">Frontend Developer Since 3 Years</div>
               <ul className="navigation">
                 <li className="navigation__item">
-                <Link to="/about" className="blog-button" onClick={handleClick}>About</Link>
-                  </li>
+                  <Link to="/about" className="blog-button" onClick={handleClick}>About</Link>
+                </li>
                 <li className="navigation__item">
                   <Link to="/skills" className="blog-button" onClick={handleClick}>Skills</Link>
                 </li>
               </ul>
               <ul className="navigationList">
                 <li className="navigationBtn">
-                  <a href="http://twitter.com/" title="@tanuja on Twitter" target="_blank">
+                  <a href="http://twitter.com/" title="@tanuja on Twitter" target="_blank" rel="noopener noreferrer">
                     <FaTwitter size={22} color="#fff" />
                   </a>
                 </li>
                 <li className="navigationBtn">
-                  <a href="www.linkedin.com/in/tanujatiwarii" title="tanuja.ac on Facebook" target="_blank">
+                  <a href="https://www.linkedin.com/in/tanujatiwarii" title="Tanuja on LinkedIn" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin size={22} color="#fff" />
                   </a>
                 </li>
                 <li className="navigationBtn">
-                  <a href="https://www.linkedin.com/in/" title="tanuja on LinkedIn" target="_blank">
+                  <a href="https://www.facebook.com/" title="Tanuja on Facebook" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF size={22} color="#fff" />
                   </a>
                 </li>
                 <li className="navigationBtn">
-                  <a href="https://www.github.com/Tanuja-mt" title="tanuja on GitHub" target="_blank">
+                  <a href="https://www.github.com/Tanuja-mt" title="Tanuja on GitHub" target="_blank" rel="noopener noreferrer">
                     <FaGithub size={22} color="#fff" />
                   </a>
                 </li>
-
               </ul>
             </div>
           </div>
         </div>
         <div className="panel-cover--overlay"></div>
       </header>
-   
-      <Routes>
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/about" element={<About />} />
 
+      <Routes>
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
       </Routes>
     </div>
   );

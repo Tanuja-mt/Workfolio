@@ -1,25 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { NavLink } from 'react-router-dom';
 
 const About =()=>{
-
-  // const API = "https://www.programiz.com/javascript/online-compiler/";
-  // const getMoviData = async () => {
-  //   try{
-  //     const res = await axios.get(API);
-  //     console.log(res);
-  //   }
-  //   catch(error){
-  //     console.log(error)
-  //   }
-  // };
-
-
-  // useEffect (() =>{
-  //   getMoviData();
-  // },[]);
-
     return(
-     <div className="aboutSection">
+
+
+<div className="aboutSection">
         <div className="content-wrapper">
           <div className="content-wrapper-inner">
             <article className="post-container post-container--single">
@@ -36,7 +22,7 @@ const About =()=>{
                 </div>
                 <h4 id="my-personal-interests"><strong>My Personal Interests</strong></h4>
                 <div className='aboutMy'>When I am not with technology, I enjoy my time doing any of the following:</div>
-                <ul>
+                <ul className="mySkills">
                   <li>Spending time with family</li>
                   <li>Travelling and Exploring new places and cultures</li>
                   <li>Photography</li>
@@ -53,7 +39,7 @@ const About =()=>{
           <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
           <script type="text/javascript" src="/js/main.js?1630478474814671744"></script>
         </div>
-      </div> 
+      </div>    
 
     )
 }
