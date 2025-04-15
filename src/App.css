@@ -50,3 +50,18 @@ ul.mySkills li:after{position:absolute;content:'';left:0;top:12px; width:6px;hei
 h1 {margin-top: 0;font-size: 3.2em;line-height: 1.2em;letter-spacing: .05em;}
 h1, h2, h3, h4, h5, h5 {margin-top: .8em;margin-bottom: .4em;font-family: "Roboto Slab", serif;font-weight: lighter;color: #333333;-webkit-font-smoothing: antialiased;}
 .aboutSection a {text-decoration: none;color: #e25440;}
+
+@media screen and (max-width:768px) {
+  .header.expanded{width:0px; transition:0.8s;border-radius:0 8px 8px 0;overflow:hidden;}
+  .aboutSection, .skillSection{margin-left:0;}
+  .post-title{margin:5px 0;}
+  h1{font-size:24px;font-weight:bold;}
+  .aboutMy{font-size:14px;}
+  h4 strong {font-size:18px;}
+  ul.mySkills li{font-size:14px;}
+  .profession {text-align:center;}
+  .pannelContainer a span {font-weight:bold;font-size:26px;}
+  /* .pannelContainer a{padding-bottom:0;} */
+  .profession {font-size:16px;}
+  .navigation{margin-top:20px;}
+}
