@@ -31,8 +31,7 @@ const About =()=>{
               </header>
               <section className="post">
                 <div className='aboutMy'>
-                  I hold a Diploma in Information Technology from Govt. Polytechnic College, Kashipur (Uttarakhand), and bring over 3 years of professional experience in Frontend Development. My journey in tech has been driven by a deep passion for building intuitive, responsive user interfaces and staying current with the latest tools and trends in web development.
-                  I thrive in fast-paced environments where continuous learning and problem-solving are part of the daily rhythm. Whether it’s refining UI/UX, diving into new frameworks, or optimizing performance, I’m always eager to grow and contribute meaningfully to impactful projects.
+                  I have done Engineering in Information Technology from Government Polytechnic College, Kashipur (Uttarakhand), and bring over 3 years of hands-on experience in Frontend Development. My journey in tech is fueled by a strong passion for crafting intuitive, responsive user interfaces and staying up-to-date with the latest advancements in web technologies.
                 </div>
                 <h4 id="my-personal-interests"><strong>Personal Interests</strong></h4>
                 <div className='aboutMy'>When I'm away from technology, I find joy in:</div>

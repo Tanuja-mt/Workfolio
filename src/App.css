@@ -17,7 +17,7 @@ li{list-style-type:none;}
 .navigation__item a {display: block;position: relative;border-color: #FFF;color: #FFF;opacity: .8;cursor:pointer;}
 .btn, .navigation__item a {padding: 10px 20px;border-radius: 20px;font-size: .9em;font-weight: bold;letter-spacing: 1px;text-shadow: none;color: #e25440;border:1px solid #fff;color:#fff;-webkit-font-smoothing: antialiased;animation-name: run;animation-duration: 5s;}
 .navigation__item a:hover{color:#fff;transform:0.5s;    border: 1px solid #e25440;letter-spacing: 1px;text-shadow: none;color: #e25440;}
-.navigationList{display:flex;align-items:center;justify-content:center;gap:10px;}
+.navigationList{margin-bottom:30px; display:flex;align-items:center;justify-content:center;gap:10px;}
 .navigationList li{transition:.5s; width:40px;height:40px;border:1px solid #fff;display:flex;align-items:center;justify-content:center;border-radius:100%;}
 .navigationList li a{width:39px;height:39px;}
 .profession .navigation__item{border-radius:100%;}
@@ -50,6 +50,34 @@ ul.mySkills li:after{position:absolute;content:'';left:0;top:12px; width:6px;hei
 h1 {margin-top: 0;font-size: 3.2em;line-height: 1.2em;letter-spacing: .05em;}
 h1, h2, h3, h4, h5, h5 {margin-top: .8em;margin-bottom: .4em;font-family: "Roboto Slab", serif;font-weight: lighter;color: #333333;-webkit-font-smoothing: antialiased;}
 .aboutSection a {text-decoration: none;color: #e25440;}
+.bouncing-loader {
+  display: flex;
+  justify-content: center;
+}
+
+.bouncing-loader > div {
+  width: 14px;
+  height: 14px;
+  margin: 3px 6px;
+  border-radius: 50%;
+  background-color: #a3a1a1;
+  opacity: 1;
+  animation: bouncing-loader 0.6s infinite alternate;
+}
+@keyframes bouncing-loader {
+  to {
+    opacity: 0.1;
+    transform: translateY(-16px);
+  }
+}
+
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
 
 @media screen and (max-width:768px) {
   .header.expanded{width:0px; transition:0.8s;border-radius:0 8px 8px 0;overflow:hidden;}

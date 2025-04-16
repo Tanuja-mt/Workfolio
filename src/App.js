@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import profileImg from './assets/images/profile-photo.jpg';
 import { Routes, Route, Link } from 'react-router-dom';
 import { FaTwitter, FaLinkedin, FaFacebookF, FaGithub } from 'react-icons/fa';
-
+import { motion } from "motion/react"
 // import Home from './components/Home';
 import Skills from './components/skills';
 import About from './components/about';
@@ -56,6 +56,11 @@ function App() {
                   </a>
                 </li>
               </ul>
+              <div className="bouncing-loader">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
           </div>
         </div>
